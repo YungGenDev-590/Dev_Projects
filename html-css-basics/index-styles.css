@@ -1,0 +1,47 @@
+body
+{
+  background-color: indigo;
+}
+
+h1
+{
+  color: rgb(33, 197, 226);
+  font-family: Montserrat;
+  text-align: right;
+  margin-right: 50px;
+  font-size: 40px;
+}
+
+.css1
+{
+  color: rgb(172, 172, 245);
+  font-size: 100%;
+  font-family: Montserrat;
+  font-weight: bold;
+  text-align: right;
+  margin-right: 50px;
+}
+
+.css2
+{
+  color: rgb(116, 235, 101);
+  font-family: Montserrat;
+  text-align: right;
+  font-size: 100%;
+  text-align: center;
+  border-style: dashed;
+  border-width: 3px;
+  border-color: rgb(255, 145, 145);
+  border-radius: 3em;
+}
+
+.pic
+{
+  float: left;
+  clear: left;
+  width: 500px;
+  border-radius: 100px;
+  margin-left: 50px;
+  margin-right: 100px;
+  margin-bottom: 100px;
+}

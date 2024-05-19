@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <title>
+        background image with transparent overlay
+    </title>
+    <style>
+        /* bg image with transparent overlay */
+        #show_bg {
+            background-image: url('https://picsum.photos/200/300');
+            width: 80%;
+            height: 200px;
+            background-size: cover;
+            color: white;
+        }
+
+        #show_bg_2 {
+            background-image:
+                linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+                url('https://picsum.photos/200/300');
+            width: 80%;
+            height: 400px;
+            background-size: cover;
+            color: white;
+            padding: 20px;
+        }
+
+        /* demo image */
+        .demo-wrap {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .demo-bg {
+            opacity: 0.6;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: auto;
+        }
+
+        .demo-content {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- bg image with transparent overlay -->
+    <!-- <div id="show_bg">
+        <div id="show_bg_2"></div>
+    </div> -->
+
+    <!-- demo image-->
+
+    <div class="demo-wrap">
+        <img class="demo-bg" src="https://assets.digitalocean.com/labs/images/community_bg.png" alt="">
+        <div class="demo-content">
+            <h1>Hello World!</h1>
+        </div>
+    </div>
+
+</body>
+
+</html>

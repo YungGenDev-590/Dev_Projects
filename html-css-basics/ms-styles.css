@@ -1,0 +1,62 @@
+html {
+    font-family: Bahnschrift;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 1.6rem;
+    color: aqua;
+    font-family: Segoe UI;
+}
+
+h2 {
+    font-size: 1.4rem;
+    color: bisque;
+    font-family: Consolas;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: crimson;
+}
+
+h4 {
+    font-size: 1.1rem;
+    color: lightgreen;  
+}
+
+a:hover {
+    background-color: darkviolet;
+}
+
+#social-media {
+    color: blue;
+}
+
+.experience {
+    font-style: italic;
+    color: darkorange;
+}
+
+a:visited {
+    color: mediumspringgreen;
+}
+
+a:link {
+    color: deepskyblue;
+}
+
+body {
+    background-color: black;
+}
+
+ul {
+    color: greenyellow;
+}
+
+
+table {
+    color: white;
+    background-color: rgba(0, 255, 255, 0.7);
+    padding: 10px;
+}

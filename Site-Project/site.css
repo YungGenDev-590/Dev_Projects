@@ -1,0 +1,73 @@
+h1 {
+  color: rgb(54, 134, 255);
+}
+
+div.regForm {
+  width: 100%;
+  text-align: center;
+  background: rgb(53, 53, 53);
+  font-family: Montserrat;
+  padding: 1em 1em;
+}
+
+div.regForm a:hover {
+  cursor: pointer;
+}
+
+div.container {
+  width: 100%;
+  text-align: center;
+  padding: 2em 2em;
+  margin: 0px auto;
+  font-family: Montserrat;
+}
+
+div.container a {
+  color: rgb(222, 255, 101);
+  text-decoration: none;
+  font: 20px Montserrat;
+  margin: 0px 15px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+
+.blue {
+  background: #008b00;
+}
+
+div.navBar a:before,
+div.navBar a:after {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: rgb(222, 255, 101);
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+div.navBar a:before {
+  top: 0px;
+  transform: translateY(10px);
+}
+
+div.navBar a:after {
+  bottom: 0px;
+  transform: translateY(-10px);
+}
+
+div.navBar a:hover:before,
+div.navBar a:hover:after {
+  opacity: 1;
+  transform: translateY(0px);
+}
+label{
+  font-family: Montserrat Medium;
+}
+
+.spacing-left{
+  width:20%;
+}

@@ -1,0 +1,18 @@
+button {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 59, 114);
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 5px 8px;
+  font: 15px Sofia Sans Medium;
+  transition: all 0.15s ease-in-out;
+}
+
+button:hover {
+  color: rgb(0, 59, 114);
+  background-color: rgb(255, 255, 255);
+}
+
+body {
+  font: 15px Sofia Sans Medium;
+}
