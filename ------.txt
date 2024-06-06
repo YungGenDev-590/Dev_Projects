@@ -595,3 +595,43 @@ Application
 Database
 Infrastructure
 Security protocol(s)
+
+================================================================================================================================================================================================================
+
+CEH (Certified Ethical Hacking)
+-------------------------------
+
+Black-hat hackers:
+Malicious hackers that use hacking attacks for illegal purposes such as information harvesting, controlling systems, etc.
+
+White-hat hackers:
+Ethical hackers who have permission to hack systems with no malicious intent, these hackers are mainly hired to do pentests the security of systems (known as pentesters - penetration testers)
+
+Grey-hat hackers:
+A combination of black-hat and white-hat hackers whereby that attacks are illegal but they do not perform illegal tasks once systems are attacked.
+
+
+================================================================================================================================================================================================================
+
+Service Desk:
+
+Reimage a device
+
+Connect the device to a working LAN cable
+Boot up and spam F12 to enter the system BIOS
+Select the IPv4 image protocol
+In the dialog box, select Windows 11 23H2 Enterprise OS edition
+Enter the universal IT admin password
+Change the value for the host/device name to HO[tag number]
+Let the installation process run and once done install the necessary drivers
+For HP open the browser and search for HP image assistant
+Install needed drivers and imaging process is complete
+Once drivers are installed, log in with user credentials and install Office, OPERA, Chrome. Set up Oulook and Teams (after device restart).
+
+================================================================================================================================================================================================================
+
+Clone to local machine
+Make changes, stage the changes, commit and push the changes to Git (DevOps) on your sub branch
+Create a pull request to merge your changes with the development branch (once approved)
+An automatic build of the staging and development environments will commence
+For dev/stg environments the releases are triggered to automatically be deployed to STG/DEV, however for the PROD environments the releases are manual and have to be created and thereafter each deployment has to be manually triggered for deployment.
