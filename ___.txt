@@ -635,3 +635,9 @@ Make changes, stage the changes, commit and push the changes to Git (DevOps) on 
 Create a pull request to merge your changes with the development branch (once approved)
 An automatic build of the staging and development environments will commence
 For dev/stg environments the releases are triggered to automatically be deployed to STG/DEV, however for the PROD environments the releases are manual and have to be created and thereafter each deployment has to be manually triggered for deployment.
+
+Clear browser cache by inspecting a page and then right click on the refresh button to give the following options:
+
+Normal reload
+Hard reload
+Empty cache and hard reload
