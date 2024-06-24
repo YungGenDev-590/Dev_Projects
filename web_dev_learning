@@ -1,5 +1,3 @@
-SunIT
-
 >>> Hospitality IT (OPERA & Simphony): <<<
 
 ================================================================================================================================================================================================================
@@ -636,3 +634,207 @@ Make changes, stage the changes, commit and push the changes to Git (DevOps) on 
 Create a pull request to merge your changes with the development branch (once approved)
 An automatic build of the staging and development environments will commence
 For dev/stg environments the releases are triggered to automatically be deployed to STG/DEV, however for the PROD environments the releases are manual and have to be created and thereafter each deployment has to be manually triggered for deployment.
+
+================================================================================================================================================================================================================
+
+Node.js:
+--------
+
+Enter the node REPL (Read Evaluate Print Loop) by typing "node" (not as a string) in the terminal
+
+===== Press Tab twice to bring up a list of global Node variables =====
+PS C:\Source\Repos\complete-node-bootcamp-master> node
+Welcome to Node.js v22.3.0.
+Type ".help" for more information.
+
+===== > /* use the below REPL command to bring up a list of global Node variables */ =====
+
+>
+AbortController                   AbortSignal                       AggregateError                    Array                             ArrayBuffer
+Atomics                           BigInt                            BigInt64Array                     BigUint64Array                    Blob
+Boolean                           BroadcastChannel                  Buffer                            ByteLengthQueuingStrategy         CompressionStream
+CountQueuingStrategy              Crypto                            CryptoKey                         CustomEvent                       DOMException
+DataView                          Date                              DecompressionStream               Error                             EvalError
+Event                             EventTarget                       File                              FinalizationRegistry              Float32Array
+Float64Array                      FormData                          Function                          Headers                           Infinity
+Int16Array                        Int32Array                        Int8Array                         Intl                              Iterator
+JSON                              Map                               Math                              MessageChannel                    MessageEvent
+MessagePort                       NaN                               Navigator                         Number                            Object
+Performance                       PerformanceEntry                  PerformanceMark                   PerformanceMeasure                PerformanceObserver
+PerformanceObserverEntryList      PerformanceResourceTiming         Promise                           Proxy                             RangeError
+ReadableByteStreamController      ReadableStream                    ReadableStreamBYOBReader          ReadableStreamBYOBRequest         ReadableStreamDefaultController
+ReadableStreamDefaultReader       ReferenceError                    Reflect                           RegExp                            Request
+Response                          Set                               SharedArrayBuffer                 String                            SubtleCrypto
+Symbol                            SyntaxError                       TextDecoder                       TextDecoderStream                 TextEncoder
+TextEncoderStream                 TransformStream                   TransformStreamDefaultController  TypeError                         URIError
+URL                               URLSearchParams                   Uint16Array                       Uint32Array                       Uint8Array
+Uint8ClampedArray                 WeakMap                           WeakRef                           WeakSet                           WebAssembly
+WebSocket                         WritableStream                    WritableStreamDefaultController   WritableStreamDefaultWriter       _
+_error                            assert                            async_hooks                       atob                              btoa
+buffer                            child_process                     clearImmediate                    clearInterval                     clearTimeout
+cluster                           console                           constants                         crypto                            decodeURI
+decodeURIComponent                dgram                             diagnostics_channel               dns                               domain
+encodeURI                         encodeURIComponent                escape                            eval                              events
+fetch                             fs                                global                            globalThis                        http
+http2                             https                             inspector                         isFinite                          isNaN
+module                            navigator                         net                               os                                parseFloat
+parseInt                          path                              perf_hooks                        performance                       process
+punycode                          querystring                       queueMicrotask                    readline                          repl
+require                           setImmediate                      setInterval                       setTimeout                        stream
+string_decoder                    structuredClone                   sys                               timers                            tls
+trace_events                      tty                               undefined                         unescape                          url
+util                              v8                                vm                                wasi                              worker_threads
+zlib
+
+__proto__                         hasOwnProperty                    isPrototypeOf                     propertyIsEnumerable              toLocaleString
+toString                          valueOf
+
+constructor
+
+===== > /* use the below REPL command to bring up a list of properties that can be used with the "String" command */ =====
+
+> String.
+String.__proto__             String.hasOwnProperty        String.isPrototypeOf         String.propertyIsEnumerable  String.toLocaleString        String.valueOf
+
+String.apply                 String.arguments             String.bind                  String.call                  String.caller                String.constructor
+String.toString
+
+String.fromCharCode          String.fromCodePoint         String.length                String.name                  String.prototype             String.raw
+
+> String.
+
+===== > /* use the below REPL command to bring up a list of properties that can be used with the "String" command */ =====
+
+> Number.
+Number.__proto__             Number.hasOwnProperty        Number.isPrototypeOf         Number.propertyIsEnumerable  Number.toLocaleString        Number.valueOf
+
+Number.apply                 Number.arguments             Number.bind                  Number.call                  Number.caller                Number.constructor
+Number.toString
+
+Number.EPSILON               Number.MAX_SAFE_INTEGER      Number.MAX_VALUE             Number.MIN_SAFE_INTEGER      Number.MIN_VALUE             Number.NEGATIVE_INFINITY
+Number.NaN                   Number.POSITIVE_INFINITY     Number.isFinite              Number.isInteger             Number.isNaN                 Number.isSafeInteger
+Number.length                Number.name                  Number.parseFloat            Number.parseInt              Number.prototype
+
+> Number.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+PS C:\Source\Repos\complete-node-bootcamp-master> node
+Welcome to Node.js v22.3.0.
+Type ".help" for more information.
+>
+AbortController                   AbortSignal                       AggregateError                    Array                             ArrayBuffer
+Atomics                           BigInt                            BigInt64Array                     BigUint64Array                    Blob
+Boolean                           BroadcastChannel                  Buffer                            ByteLengthQueuingStrategy         CompressionStream
+CountQueuingStrategy              Crypto                            CryptoKey                         CustomEvent                       DOMException
+DataView                          Date                              DecompressionStream               Error                             EvalError
+Event                             EventTarget                       File                              FinalizationRegistry              Float32Array
+Float64Array                      FormData                          Function                          Headers                           Infinity
+Int16Array                        Int32Array                        Int8Array                         Intl                              Iterator
+JSON                              Map                               Math                              MessageChannel                    MessageEvent
+MessagePort                       NaN                               Navigator                         Number                            Object
+Performance                       PerformanceEntry                  PerformanceMark                   PerformanceMeasure                PerformanceObserver
+PerformanceObserverEntryList      PerformanceResourceTiming         Promise                           Proxy                             RangeError
+ReadableByteStreamController      ReadableStream                    ReadableStreamBYOBReader          ReadableStreamBYOBRequest         ReadableStreamDefaultController
+ReadableStreamDefaultReader       ReferenceError                    Reflect                           RegExp                            Request
+Response                          Set                               SharedArrayBuffer                 String                            SubtleCrypto
+Symbol                            SyntaxError                       TextDecoder                       TextDecoderStream                 TextEncoder
+TextEncoderStream                 TransformStream                   TransformStreamDefaultController  TypeError                         URIError
+URL                               URLSearchParams                   Uint16Array                       Uint32Array                       Uint8Array
+Uint8ClampedArray                 WeakMap                           WeakRef                           WeakSet                           WebAssembly
+WebSocket                         WritableStream                    WritableStreamDefaultController   WritableStreamDefaultWriter       _
+_error                            assert                            async_hooks                       atob                              btoa
+buffer                            child_process                     clearImmediate                    clearInterval                     clearTimeout
+cluster                           console                           constants                         crypto                            decodeURI
+decodeURIComponent                dgram                             diagnostics_channel               dns                               domain
+encodeURI                         encodeURIComponent                escape                            eval                              events
+fetch                             fs                                global                            globalThis                        http
+http2                             https                             inspector                         isFinite                          isNaN
+module                            navigator                         net                               os                                parseFloat
+parseInt                          path                              perf_hooks                        performance                       process
+punycode                          querystring                       queueMicrotask                    readline                          repl
+require                           setImmediate                      setInterval                       setTimeout                        stream
+string_decoder                    structuredClone                   sys                               timers                            tls
+trace_events                      tty                               undefined                         unescape                          url
+util                              v8                                vm                                wasi                              worker_threads
+zlib
+
+__proto__                         hasOwnProperty                    isPrototypeOf                     propertyIsEnumerable              toLocaleString
+toString                          valueOf
+
+constructor
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+PS C:\Source\Repos\complete-node-bootcamp-master> node
+Welcome to Node.js v22.3.0.
+Type ".help" for more information.
+> String.
+String.__proto__             String.hasOwnProperty        String.isPrototypeOf         String.propertyIsEnumerable  String.toLocaleString        String.valueOf
+
+String.apply                 String.arguments             String.bind                  String.call                  String.caller                String.constructor
+String.toString
+
+String.fromCharCode          String.fromCodePoint         String.length                String.name                  String.prototype             String.raw
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+> Number.
+Number.__proto__             Number.hasOwnProperty        Number.isPrototypeOf         Number.propertyIsEnumerable  Number.toLocaleString        Number.valueOf
+
+Number.apply                 Number.arguments             Number.bind                  Number.call                  Number.caller                Number.constructor
+Number.toString
+
+Number.EPSILON               Number.MAX_SAFE_INTEGER      Number.MAX_VALUE             Number.MIN_SAFE_INTEGER      Number.MIN_VALUE             Number.NEGATIVE_INFINITY
+Number.NaN                   Number.POSITIVE_INFINITY     Number.isFinite              Number.isInteger             Number.isNaN                 Number.isSafeInteger
+Number.length                Number.name                  Number.parseFloat            Number.parseInt              Number.prototype
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+> Object.
+Object.__proto__                  Object.hasOwnProperty             Object.isPrototypeOf              Object.propertyIsEnumerable       Object.toLocaleString
+Object.valueOf
+
+Object.apply                      Object.arguments                  Object.bind                       Object.call                       Object.caller
+Object.constructor                Object.toString
+
+Object.assign                     Object.create                     Object.defineProperties           Object.defineProperty             Object.entries
+Object.freeze                     Object.fromEntries                Object.getOwnPropertyDescriptor   Object.getOwnPropertyDescriptors  Object.getOwnPropertyNames
+Object.getOwnPropertySymbols      Object.getPrototypeOf             Object.groupBy                    Object.hasOwn                     Object.is
+Object.isExtensible               Object.isFrozen                   Object.isSealed                   Object.keys                       Object.length
+Object.name                       Object.preventExtensions          Object.prototype                  Object.seal                       Object.setPrototypeOf
+Object.values
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+> Array.
+Array.__proto__             Array.hasOwnProperty        Array.isPrototypeOf         Array.propertyIsEnumerable  Array.toLocaleString        Array.valueOf
+
+Array.apply                 Array.arguments             Array.bind                  Array.call                  Array.caller                Array.constructor
+Array.toString
+
+Array.from                  Array.fromAsync             Array.isArray               Array.length                Array.name                  Array.of
+Array.prototype
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+> Boolean.
+Boolean.__proto__             Boolean.hasOwnProperty        Boolean.isPrototypeOf         Boolean.propertyIsEnumerable  Boolean.toLocaleString        Boolean.valueOf
+
+Boolean.apply                 Boolean.arguments             Boolean.bind                  Boolean.call                  Boolean.caller                Boolean.constructor
+Boolean.toString
+
+Boolean.length                Boolean.name                  Boolean.prototype
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+> Function.
+Function.__proto__             Function.hasOwnProperty        Function.isPrototypeOf         Function.propertyIsEnumerable  Function.toLocaleString
+Function.valueOf
+
+Function.apply                 Function.arguments             Function.bind                  Function.call                  Function.caller
+Function.constructor           Function.toString
+
+Function.length                Function.name                  Function.prototype
+
+> Function.
