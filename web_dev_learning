@@ -316,6 +316,8 @@ GitHub / Azure DevOps (Version Control System):
 > Using Command Line to Commit / Push / Fetch / Delete / Checkout Branch, etc.
 > Creating Pull requests after code changes have been pushed into a sub branch
 > Merging approved changes into development branch to initiate a solution build and thereafter deploy into Staging / Dev Environment
+> Mnaually creating a pipeline to trigger a build of a select branch, then creating a manual realease for deploying to a production environment manually.
+> Open a Visual Studio Solution file from the terminal by navigating to the directory (cd 'filepath' [no quotes]) that contains the .sln file and then type: start 'solution_name'.sln (without quotes)
 
 > CI : continued integration
 > CD : continued development
