@@ -877,3 +877,23 @@ vm		To compile JavaScript code in a virtual machine
 zlib		To compress or decompress files
 
 Modules are used in Node to handle certain functions relating to various aspects of the system and for coding efficiency
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Node package manager (npm):
+---------------------------
+
+Node packages are different to node modules whereby node modules are required to access certain  built-in functions of those modules however, when it comes to node packages.
+They are packages that help with the development of our projects.
+Include many frameworks such as ExpressJS, ReactJS, etc. Node packages are also dependancies that our projects need to make our code work correctly.
+
+Some node package commands:
+
+npm init - Creates an npm package JSON file and is created when we start a new project, it creates the JSON package file and parameters will be set once the file has been created
+npm install slugify -> Installs the slugify package, which will become a (regular) dependancy once the package.json file has been created using the command above.
+npm install nodemon --save-dev -> installs "node mon" (node monitor) which is a package that automatically monitors for changes in our working files/directory then automatically restarts the server after changes have been saved.
+			       -> When we specify "--save-dev", saves it as a development dependancy.
+			       -> Development dependancies are only necessary for creating our projects, not running our project.
+
+npm i nodemon --global	       -> Installs nodemon globally so that it does not have to be installed every time a node project is created. (the shorthand for "install" is "i" -> node i)
+
